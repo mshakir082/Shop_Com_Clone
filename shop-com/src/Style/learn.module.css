@@ -1,0 +1,82 @@
+.learn_container{
+    background-color: #F0F1F7;
+    width: 100%;
+    height:40px;
+    display:flex;
+    justify-content: space-between;
+}
+.learn_one{
+     
+    width: 20%;
+    height:40px;
+    margin-top:3px;
+}
+.learn_two{
+     
+    width: 40%;
+    height:40px;
+    margin-top:3px;
+    display:flex;
+}
+.btn:hover{
+    background-color:black;
+    color:white;
+}
+.four_container{
+    width:100%;
+    height:auto;
+    display:flex;
+    justify-content:space-around;
+    gap:"50px";
+    padding:1rem;
+   background-color: #F0F1F7;
+   
+}
+.four_container_one{
+    width:23.5%;
+    height: 440px;
+    background-color:white;
+    box-shadow: rgba(0, 0, 0, 0.276) 0px 3px 8px;
+}
+.four_container_two{
+    width:22%;
+    height:440px;
+    background-color:white;
+    box-shadow: rgba(0, 0, 0, 0.276) 0px 3px 8px;
+}
+.four_container_three{
+    width:23.5%;
+    height:440px;
+    background-color:white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.four_container_four{
+    width:23.5%;
+    background-color:white;
+    height:440px;
+    font-size: 25px;
+}
+.four_container_inner{
+    width:100%;
+    height:140px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    font-size: 25px;
+}
+.popular_brand{
+    
+    height:400px;
+    display:flex;
+    gap:20px;
+    margin-left:5px;
+}
+.popular_brand_one{
+       width:35%;
+}
+.popular_brand_two{
+     width:61%;
+}
+.popular_brand_inner_one{
+  
+    height:150px;
+    
+}

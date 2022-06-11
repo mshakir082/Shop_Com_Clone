@@ -1,7 +1,7 @@
 
 .navbar{
     background-color: #F0F1F7;
-    
+    border:1px solid;
     height:120px;
     width:content;
     display: fixed;
@@ -21,8 +21,8 @@
     height:60px;
     width: 100%;
     display:flex;
-    margin-top: 5px;
     justify-content:space-around;
+    padding:0.5rem;
 }
 .navupp_one{
     
@@ -42,7 +42,7 @@
     margin-top:5px;
     display: flex;
     justify-content: left;
-    border-radius:10px;
+    border-radius:25px;
     background-color:white;
 }
 .search_div{
