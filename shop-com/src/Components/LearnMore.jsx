@@ -148,7 +148,9 @@ const LearnMore = () => {
                 </div>
             </div>
         </div>
-
+        <br></br>
+        <img  style={{width:"150px",marginLeft:"550px",marginTop:"20px"}} src="https://img.shop.com/Image/resources/homepage/shop-homepage-icon.svg"/>
+        {/* <LearnMore/> */}
 
     </>
   )
