@@ -1,9 +1,6 @@
 import React from 'react';
 import { Box, IconButton, useBreakpointValue,Flex ,Image,useColorModeValue,Text} from '@chakra-ui/react';
-// Here we have used react-icons package for the icons
-import { BiLeftArrowAlt, BiRightArrowAlt } from 'react-icons/bi';
-// And react-slick as our Carousel Lib
-import Slider from 'react-slick';
+
 import { BsStar, BsStarFill, BsStarHalf } from 'react-icons/bs';
 
 
@@ -20,92 +17,26 @@ const data ={
 
 
 
-// Settings for the slider
-const settings = {
-  dots: true,
-  arrows: false,
-  fade: true,
-  infinite: true,
-  autoplay: true,
-  speed: 500,
-  autoplaySpeed: 5000,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-};
-
-export default function Carousel() {
-  // As we have used custom buttons, we need a reference variable to
-  // change the state
-  const [slider, setSlider] = React.useState(Slider | null) ;
-
-  // These are the breakpoints which changes the position of the
-  // buttons as the screen size changes
-  const top = useBreakpointValue({ base: '90%', md: '50%' });
-  const side = useBreakpointValue({ base: '30%', md: '10px' });
-
-  
 
 
-  return (
-   
-    <Box position={'relative'} height={'600px'} width={'full'} overflow={'hidden'}>
-     
-      <link rel="stylesheet" type="text/css" charSet="UTF-8" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"/>
-      <link rel="stylesheet" type="text/css"href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"/>
-      {/* Left Icon */}
-      <IconButton
-        aria-label="left-arrow"
-        colorScheme="messenger"
-        borderRadius="full"
-        position="absolute"
-        left={side}
-        top={top}
-        transform={'translate(0%, -50%)'}
-        zIndex={2}
-        onClick={() => slider?.slickPrev()}>
-        <BiLeftArrowAlt />
-      </IconButton>
-      {/* Right Icon */}
-      <IconButton
-        aria-label="right-arrow"
-        colorScheme="messenger"
-        borderRadius="full"
-        position="absolute"
-        right={side}
-        top={top}
-        transform={'translate(0%, -50%)'}
-        zIndex={2}
-        onClick={() => slider?.slickNext()}>
-        <BiRightArrowAlt />
-      </IconButton>
-      {/* Slider */}
-      <Slider {...settings} ref={(slider) => setSlider(slider)}>
 
-       <ProductAddToCart />
-      </Slider>
-    </Box>
-    
-  );
-}
-
-
-function ProductAddToCart() {
+export default function ProductAddToCart() {
   return (
     
       <>
     
-    <Box bg={useColorModeValue('white', 'gray.800')} maxW="100%" height="80px" borderWidth="1px" rounded="lg"shadow="lg" position="relative" fontSize="35px" textAlign="left" fontWeight="bold" marginBottom="-35px">
+    <Box bg={useColorModeValue('white', 'gray.800')} maxW="100%" height="80px" borderWidth="1px" rounded="lg"shadow="lg" position="relative" fontSize="35px" textAlign="center" fontWeight="bold" marginBottom="-35px">
       Hot New Products</Box>
       <Flex p={50} w="full" alignItems="center" justifyContent="center" gap="12px" >
       <Box bg={useColorModeValue('white', 'gray.800')} maxW="xs" borderWidth="1px" rounded="lg"shadow="lg" position="relative">
         
-        <Image width="80%" src="https://img.shop.com/Image/240000/248600/248698/products/1935915380.jpg?size=300x300" alt={`Picture of ${data.name}`} />
+        <Image  width="70%"  src="https://img.shop.com/Image/210000/214100/214196/products/561800349__175x175__.jpg" alt={`Picture of ${data.name}`} />
          
          <Box p="6">
 
           <Flex mt="1" justifyContent="space-between" alignContent="center">
             <Box fontSize="s" fontWeight="semibold" as="h4" lineHeight="tight" isTruncated>
-            Lumière de Vie® Soothe &amp; Renew Hydrogel Mask
+            Isotonix OPC-3®
             </Box>
            </Flex>
 
@@ -132,13 +63,13 @@ function ProductAddToCart() {
 
       <Box bg={useColorModeValue('white', 'gray.800')} maxW="xs" borderWidth="1px" rounded="lg"shadow="lg" position="relative">
         
-        <Image  src="https://img.shop.com/Image/240000/243300/243380/products/1932836050.jpg?size=300x300" alt={`Picture of ${data.name}`} />
+        <Image  src="https://img.shop.com/Image/240000/243300/243396/products/603891601__175x175__.jpg" alt={`Picture of ${data.name}`} />
          
          <Box p="6">
 
           <Flex mt="1" justifyContent="space-between" alignContent="center">
             <Box fontSize="x" fontWeight="semibold" as="h4" lineHeight="tight" isTruncated>
-              Motives® Sculpting Concealer
+            Ultimate Aloe™
             </Box>
            </Flex>
 
@@ -165,13 +96,13 @@ function ProductAddToCart() {
       {/* 333333333333333333333333333333333 */}
       <Box bg={useColorModeValue('white', 'gray.800')} maxW="xs" borderWidth="1px" rounded="lg"shadow="lg" position="relative">
         
-        <Image src="https://img.shop.com/Image/240000/243300/243380/products/1925345765.jpg?size=300x300" alt={`Picture of ${data.name}`} />
+        <Image src="https://img.shop.com/Image/210000/214100/214196/products/935461732__175x175__.jpg" alt={`Picture of ${data.name}`} />
          
          <Box p="6">
 
           <Flex mt="1" justifyContent="space-between" alignContent="center">
             <Box fontSize="x" fontWeight="semibold" as="h4" lineHeight="tight" isTruncated>
-            Motives® 3-in-1 Cream Tints
+            Isotonix® Daily Essentials Packets
             </Box>
            </Flex>
 
@@ -198,13 +129,13 @@ function ProductAddToCart() {
 
       <Box bg={useColorModeValue('white', 'gray.800')} maxW="xs" borderWidth="1px" rounded="lg"shadow="lg" position="relative">
         
-        <Image width="90%" src="https://img.shop.com/Image/240000/243300/243380/products/1925345789.jpg?size=300x300" alt={`Picture of ${data.name}`} />
+        <Image width="70%" src="https://img.shop.com/Image/210000/214100/214196/products/561800345__175x175__.jpg" alt={`Picture of ${data.name}`} />
          
          <Box p="6">
 
           <Flex mt="1" justifyContent="space-between" alignContent="center">
             <Box fontSize="x" fontWeight="semibold" as="h4" lineHeight="tight" isTruncated>
-            Motives® Moment Pressed Pigment Palette
+            Isotonix® Vitamin D with K2
             </Box>
            </Flex>
 

@@ -44,7 +44,7 @@ const LearnMore = () => {
                  </div>
                  </div>
                  <br></br>
-        <img src="https://img.shop.com/Image/homepage/shop-usa-97736-summer-banner-hero1654266036793.jpeg" alt="" style={{width:"100%",height:"300px"}}/>
+        <img src="https://img.shop.com/Image/homepage/shop-usa-101197-fathers-day-esdfsdfsfxpress-shipping-socialmedia-hero1655216285067.jpeg" alt="" style={{width:"100%",height:"300px"}}/>
 
     </div>
     <br></br>

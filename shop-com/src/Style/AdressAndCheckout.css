@@ -1,0 +1,41 @@
+
+   .mainAddress{
+    margin-top: 2%;
+    margin-bottom: 1%;
+}
+.mainAddress h1{
+  margin-bottom: 25px;
+}
+.addressForm {
+  width: 40%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  font-weight: bold;
+  font-size: 1rem;
+  height: auto;
+  border-radius: 10px;
+}
+.addressForm > input{
+    border: 1px solid gray;
+    border-radius: 0;
+    width: 90%;
+    font-size: 15px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+.addressForm > #submit {
+  margin-top: 20px;
+  height: 3em;
+  background-color: #414467;
+  /* margin-bottom: 2%; */
+  border-radius: 5px;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}

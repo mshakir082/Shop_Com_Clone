@@ -53,13 +53,13 @@ const Navbar = () => {
           </div>
           <div className={style.nav_lower_three}>
               <div className={style.nav_lower_three_one} >
-              <img style={{width:"30px",marginTop:"7px"}} src="https://img.shop.com/Image/resources/images/icon-account-circle-24px.svg" alt="Account"/>
+              <Link to="/login"> <img style={{width:"30px",marginTop:"7px"}} src="https://img.shop.com/Image/resources/images/icon-account-circle-24px.svg" alt="Account"/></Link>
               </div>
               <div className={style.nav_lower_three_two}>
               <img style={{width:"30px",marginTop:"7px"}} src="https://img.shop.com/Image/resources/images/icon-orders-24px.svg" alt=""/>
               </div>
               <div className={style.nav_lower_three_three}>
-              <img style={{width:"30px",marginTop:"7px"}} src="https://img.shop.com/Image/resources/images/icon-shopping-cart-24px.svg" alt=""/>
+              <Link to="/bag"><img style={{width:"30px",marginTop:"7px"}} src="https://img.shop.com/Image/resources/images/icon-shopping-cart-24px.svg" alt=""/></Link>
               </div>
           </div>
       </div>
