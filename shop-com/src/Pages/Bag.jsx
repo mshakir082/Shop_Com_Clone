@@ -4,21 +4,14 @@ import { useNavigate } from 'react-router'
 import {Link} from 'react-router-dom'
 let cartData = JSON.parse(localStorage.getItem('cart'));
 const Bag = () => {
-let obj={}
+
+
         const navigate=useNavigate()
     const [text,setText]=useState("");
-    
-
-   
-    
     const n=cartData.length;
     let total=0;
  
-
-
-    
-  
-    const handelchangeSelect=(e,price)=>{
+ const handelchangeSelect=(e,price)=>{
       
         
         let prc = Number(price )
@@ -37,21 +30,21 @@ let obj={}
             }
 
     
-    let couponDiscount=0;    
-        const applyCupon=(text) => {
+    // let couponDiscount=0;    
+    //     const applyCupon=(text) => {
 
-            if(text=="masai30"){
+    //         if(text=="masai30"){
 
-            couponDiscount = total*30/100;
+    //         couponDiscount = total*30/100;
     
-            total =Math.ceil( total - total*30/100);
-            obj["discount"]=  total*30/100;
-            obj["total"]=Math.ceil(total);
-          }
-        else{
+    //         total =Math.ceil( total - total*30/100);
+    //         obj["discount"]=  total*30/100;
+    //         obj["total"]=Math.ceil(total);
+    //       }
+    //     else{
             
-                alert("Invalid coupon'")}
-        }        
+    //             alert("Invalid coupon'")}
+    //     }        
           
     
   return (
@@ -128,7 +121,7 @@ let obj={}
             <div className="summary">
                 <h3 style={{ marginLeft: "65px"}}>ORDER SUMMARY</h3>
                 <input type="text" placeholder="Enter promo/coupon code" id={style.coupon} value={text} onChange={(e)=>{setText(e.target.value)}}/>
-                <input type="button" id={style.apply} value="APPLY" onClick={()=>{applyCupon(text)}}/>
+                <input type="button" id={style.apply} value="APPLY" />
                 <p id='invalid'></p>
             </div>
             <hr></hr>
@@ -140,7 +133,7 @@ let obj={}
                 <p>Gift packing</p>
                 <p>FREE</p>
                 <p>Discount</p>
-                <p id={style.coupon_discount}>{couponDiscount}</p>
+                <p id={style.coupon_discount}>{}</p>
             </div>
             <hr></hr>
             <div id={style.payable_box}>
